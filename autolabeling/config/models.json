@@ -1,0 +1,22 @@
+{
+  "models": [
+    {
+      "id": "rtdetr_fpv",
+      "name": "RTDETR FPV Detection",
+      "model_path": "autolabeling/models/rtdetrv2_r18vd_120e_coco_FPV_all.onnx",
+      "input_size": [640, 640],
+      "confidence_threshold": 0.5,
+      "class_names": ["Air3", "Mavic2", "Mavic3"],
+      "description": "用于FPV无人机航拍物体检测"
+    },
+    {
+      "id": "yolov8_general",
+      "name": "YOLOv8 General",
+      "model_path": "D:/models/yolov8m.onnx",
+      "input_size": [640, 640],
+      "confidence_threshold": 0.45,
+      "class_names": ["person", "car", "dog", "cat"],
+      "description": "通用目标检测模型（需要自行配置路径）"
+    }
+  ]
+}
