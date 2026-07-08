@@ -30,7 +30,7 @@ pip install -r requirements.txt
 
 从链接获得用于无人机检测的onnx文件与ORTrack跟踪权重
 `https://pan.baidu.com/s/1FHcaWI0PSyaesn59TnmBXw 提取码: qcuy `
-下载后将模型文件放入`autolabeling/models` 中
+下载后将模型文件放入`autolabeling/models` 中<br>
 编辑`autolabeling/config/models.json` 以定义onnx模型
 
 ## 使用方法
@@ -46,7 +46,7 @@ python labelImg.py
 应用将启动图形用户界面，可以开始进行无人机图像标注工作。（现在只完成了yolo格式部分）
 
 ### 2. 自动标注
-<img width="822" height="444" alt="image" src="https://github.com/user-attachments/assets/36e9dc68-294c-41b2-9319-1741e32ee240" />
+<img width="822" height="444" alt="image" src="https://github.com/user-attachments/assets/36e9dc68-294c-41b2-9319-1741e32ee240" /><br>
 点击菜单“自动标注”选项进入自动标注界面，选择`Detection`或`Tracking`功能
 
 
@@ -54,19 +54,26 @@ python labelImg.py
 
 
 ### 3. 检测功能
-<img width="716" height="510" alt="image" src="https://github.com/user-attachments/assets/fb963621-9fd8-4379-9ec8-9cbb755d52a8" />
+<img width="716" height="510" alt="image" src="https://github.com/user-attachments/assets/fb963621-9fd8-4379-9ec8-9cbb755d52a8" /><br>
 从`Detection Models`中选择已被定义的onnx模型，选择检测范围为单帧或文件夹内所有帧，并更改标注文件保存目录
 
 
 ### 4. 跟踪功能
-<img width="427" height="533" alt="image" src="https://github.com/user-attachments/assets/a28ed4b4-b8c3-4c9a-9402-d85ac2a85d47" />
+<img width="427" height="533" alt="image" src="https://github.com/user-attachments/assets/a28ed4b4-b8c3-4c9a-9402-d85ac2a85d47" /><br>
 
 自定义IOU阈值：当跟踪结果与原本图像中标注框IOU高于阈值时选择：<br>
 保留原本标注框或采用跟踪结果作为标注框。<br>
+<img width="505" height="312" alt="image" src="https://github.com/user-attachments/assets/c687d660-83b9-4b14-aed7-5de5b778fecc" /><br>
 
 选择`CSRT`或`ORTrack`作为跟踪器，选用`ORTrack`时可选是否用GPU加速。<br>
+<img width="405" height="215" alt="image" src="https://github.com/user-attachments/assets/d5d7f3db-845d-4fad-8ddb-7b83beec0a89" /><br>
+
 选中任意目标作为起始目标，点击'Start Tracking'开始自动标注。<br>
+<img width="647" height="514" alt="image" src="https://github.com/user-attachments/assets/890deb62-7d29-466d-8d4d-59fc56edbc0d" /><br>
+
 开始进行可视化跟踪，若发现跟踪错误则按下'Stop Tracking'停止。<br>
+<img width="645" height="512" alt="image" src="https://github.com/user-attachments/assets/83325a9f-33ed-462d-bf21-77456a9a4cf8" /><br>
+
 进入保存界面，通过AD切换上下帧，停留在满意的跟踪帧时，按下Enter保存直到该帧的所有跟踪结果。<br>
 
 
