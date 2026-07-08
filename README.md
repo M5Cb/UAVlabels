@@ -47,21 +47,21 @@ python labelImg.py
 
 ### 2. 自动标注
 
-点击菜单“自动标注”选项进入自动标注界面，选择Detection或Tracking功能
+点击菜单“自动标注”选项进入自动标注界面，选择`Detection`或`Tracking`功能
 
 
 ### 3. 检测功能
 
-从Detection Models中选择已被定义的onnx模型，选择检测范围为单帧或文件夹内所有帧，并更改标注文件保存目录
+从`Detection Models`中选择已被定义的onnx模型，选择检测范围为单帧或文件夹内所有帧，并更改标注文件保存目录
 
 ### 4. 跟踪功能
 
 自定义IOU阈值：当跟踪结果与原本图像中标注框IOU高于阈值时选择：<br>
 保留原本标注框或采用跟踪结果作为标注框。<br>
-选择CSRT或ORTrack作为跟踪器，选用ORTrack时可选是否用GPU加速。<br>
+选择`CSRT`或`ORTrack`作为跟踪器，选用`ORTrack`时可选是否用GPU加速。<br>
 选中任意目标作为起始目标，点击'Start Tracking'开始自动标注。<br>
 开始进行可视化跟踪，若发现跟踪错误则按下'Stop Tracking'停止。<br>
-进入保存界面，通过AD切换上下帧，停留在满意的图片帧时，按下Enter保存直到该帧的所有跟踪结果。<br>
+进入保存界面，通过AD切换上下帧，停留在满意的跟踪帧时，按下Enter保存直到该帧的所有跟踪结果。<br>
 
 
 
