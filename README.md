@@ -26,24 +26,29 @@ cd UAVlabels
 ```bash
 pip install -r requirements.txt
 ```
+### 3. 下载模型
+
+从以下链接中获得用于无人机检测的onnx文件与ORTrack跟踪权重
+链接: https://pan.baidu.com/s/1FHcaWI0PSyaesn59TnmBXw 提取码: qcuy 
+下载后将模型文件放入autolabeling/models 中
+编辑autolabeling/config/models.json 以定义onnx模型
 
 ## 使用方法
 
 安装完成后，执行以下命令启动应用：
 
 ```bash
-python3.10 labelImg.py
+python labelImg.py
 ```
 
 应用将启动图形用户界面，可以开始进行无人机图像标注工作。
 
 ## 功能特性
 
-- 支持多种图像格式的导入
-- 矩形框标注（Bounding Box）
-- 快速便捷的标注流程
-- 针对无人机目标的半自动化标注功能
-- 自动检测和追踪功能
+- 集成了基于目标检测与目标跟踪两种范式的半自动标注方法
+- 加载onnx模型进行检测
+- 集成CSRT与ORTrack两种跟踪方法进行无人机跟踪
+
 
 ## 许可证
 
@@ -53,4 +58,16 @@ python3.10 labelImg.py
 
 欢迎提交issue和pull request来帮助改进这个项目。
 
+## Acknowledgements / Citation
+
+This project utilizes the following open-source projects and algorithms:
+
+*   **CSRT Tracker**: The implementation is based on the OpenCV library [1], which is licensed under the Apache 2.0 License. The underlying algorithm is from the paper:
+    > A. Lukezic, et al. "Discriminative Correlation Filter with Channel and Spatial Reliability." *IJCV*, 2018. [4†L11-L12]
+
+*   **ORTrack**: The implementation is based on the official repository [2] and the paper:
+    > [Author Names], "Learning Occlusion-Robust Vision Transformers for Real-Time UAV Tracking." *CVPR*, 2025. [1†L28]
+
+[1] OpenCV: https://opencv.org/
+[2] ORTrack GitHub Repository: https://github.com/wuyou3474/ORTrack
 ---
