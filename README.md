@@ -28,10 +28,10 @@ pip install -r requirements.txt
 ```
 ### 3. 下载模型
 
-从以下链接中获得用于无人机检测的onnx文件与ORTrack跟踪权重
-链接: https://pan.baidu.com/s/1FHcaWI0PSyaesn59TnmBXw 提取码: qcuy 
-下载后将模型文件放入autolabeling/models 中
-编辑autolabeling/config/models.json 以定义onnx模型
+从链接获得用于无人机检测的onnx文件与ORTrack跟踪权重
+`https://pan.baidu.com/s/1FHcaWI0PSyaesn59TnmBXw 提取码: qcuy `
+下载后将模型文件放入`autolabeling/models` 中
+编辑`autolabeling/config/models.json` 以定义onnx模型
 
 ## 使用方法
 
