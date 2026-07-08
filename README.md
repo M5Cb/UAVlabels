@@ -60,8 +60,6 @@ python labelImg.py
 <p align="center">
 <img width="80%" alt="image" src="https://github.com/user-attachments/assets/fb963621-9fd8-4379-9ec8-9cbb755d52a8" /><br>
 
-<img width="716" height="510" alt="image" src="https://github.com/user-attachments/assets/fb963621-9fd8-4379-9ec8-9cbb755d52a8" /><br>
->>>>>>> 473c10e9487237302c6ecbbf8b688af5692c15d5
 从`Detection Models`中选择已被定义的onnx模型，选择检测范围为单帧或文件夹内所有帧，并更改标注文件保存目录
 
 
